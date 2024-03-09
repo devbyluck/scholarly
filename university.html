@@ -14,6 +14,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="myscripts.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Scholarly</title>
   </head>
@@ -21,14 +22,14 @@
 <navigation>
 <!-- nav bar start-->
 <nav class="navbar navbar-nav-scroll navbar-expand-lg sticky-top bg-white">
-    <div class="container-fluid justify-content-end">
+    <div class="container-fluid justify-content-start">
       <a class="navbar-brand ps-5" href="index.html">
         <img src="/media/logo.png" alt="scholarly logo" class="nav-logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
       <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand " href="#">Singapore Universities</a>
@@ -55,16 +56,177 @@
 </navigation>
 
 <main>
-    <div class="container">
+    <div class="container-xxl">
         <div class="row">
-            <div class="col-2">
-                <div class="side-bar">Contents</div>
+          
+    <!-- right side start -->
+
+    <div class="col-md-4 col-offset-md4">
+      <div class="school-card">
+        <div id="school-card-title">NUS</div>
+        <div><img src="/media/nus.jpg" id="school-card-logo"></div>
+        <div id="school-information">School Information</div>
+        <div class="container">
+          <div class="row">
+            <div class="col" scope="row" id="school-card-content-header">Location</div>
+            <div class="col" id="school-card-content-body">Singapore</div>
+            </div>
+            
+          <div class="row">
+            <div class="col" scope="row" id="school-card-content-header">Region</div>
+            <div class="col" id="school-card-content-body">Asia</div>
             </div>
 
-            <!-- main centre information -->
-            <div class="col-10"> 
-                <div class="school-name">School Name</div>  
+            <div class="row">
+              <div class="col" scope="row" id="school-card-content-header">Established</div>
+              <div class="col" id="school-card-content-body">1905</div>
+              </div>
+         
+              <div class="row">
+                <div class="col" scope="row" id="school-card-content-header">Endowment</div>
+                <div class="col" id="school-card-content-body">S$6.46 billion (2020)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col" scope="row" id="school-card-content-header">Aacdemic Staff</div>
+                  <div class="col" id="school-card-content-body">2,555 (2018)</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col" scope="row" id="school-card-content-header">Students</div>
+                    <div class="col" id="school-card-content-body">35,908</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" scope="row" id="school-card-content-header">Undergraduates</div>
+                      <div class="col" id="school-card-content-body">27,604</div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col" scope="row" id="school-card-content-header">Postgraduates</div>
+                        <div class="col" id="school-card-content-body">8,304</div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col" scope="row" id="school-card-content-header">Campus</div>
+                          <div class="col" id="school-card-content-body">370 Acres, Urban</div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col" scope="row" id="school-card-content-header">Website</div>
+                            <div class="col" id="school-card-content-body"><a href="www.nus.edu.sg">www.nus.edu.sg</a></div>
+                            </div>
+                            
+                          <div id="more-links">More Links</div>
+                          <div class="row">
+                            <div class="col" id="school-card-content-body"><a href="https://en.wikipedia.org/wiki/National_University_of_Singapore">Wikipedia</a></div>
+                            <div class="col" id="school-card-content-body"><a href="www.nus.edu.sg">Programmes</a></div>
+                            <div class="col" id="school-card-content-body"><a href="www.nus.edu.sg">www.nus.edu.sg</a></div>
+                            <div class="col" id="school-card-content-body"><a href="www.nus.edu.sg">www.nus.edu.sg</a></div>
+                            </div>
+
+          
+        </tbody>
+      </div>
+      </div>
+  </div>
+  
+ <!-- right side end -->
+
+           <!-- centre start -->
+            <div class="col-md-8"> 
+                <div class="school-name">National University of Singapore</div>
+                <div class="rankings">QS Global: #8</div>  
+                <div class="school-description">The National University of Singapore (NUS) is a national public collegiate and research university in Singapore. It was officially established in 1980 by the merger of the University of Singapore and Nanyang University.[5] <Br><br>
+
+                  The university offers degree programmes in disciplines at both the undergraduate and postgraduate levels, including in the sciences, medicine and dentistry, design and environment, law, arts and social sciences, engineering, business, computing, and music.[6] NUS's main campus is located adjacent to the Kent Ridge subzone of Queenstown.[7] The Duke–NUS Medical School is located at the Outram campus.[8] The Bukit Timah campus houses the Faculty of Law and Lee Kuan Yew School of Public Policy. NUS's affiliated faculty members and researchers include one Nobel Prize laureate, one Tang Prize laureate, and one Vautrin Lud laureate.</div><br>
+                  <!-- admission requirements start -->
+                  <div id="admission-requirements">Admission Requirements</div>
+                  <input type="text" id="myInput" onkeyup="searchbar()" placeholder="Degree name">
+                  <div class="table-responsive">
+                  <table id="myTable">
+                    <thead>
+                    <tr class="header">
+                      <th style="width:40%;">Degree</th>
+                      <th style="width:10%;">Poly</th>
+                      <th style="width:10%;">JC</th>
+                      <th style="width:25%;">Median Salary</th>
+                      <th style="width:10%;">Employability</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Business (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                      <td>$4000</td>
+                      <td>99%</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science (Bachleor)</td>
+                      <td>4.00</td>
+                      <td>AAA/A</td>
+                    </tr>
+                  </tbody>
+                  </table>
             </div>
+            <div class="footnotes">Data from IGP and GES reports from the university.</div>
+            <div class="footnotes">Employability refers to % of graduates who found a full-time job offer within 6 months of graduation.</div>
+            <!-- admission requirements end -->
+            <br>
+
+            <!-- location start -->
+            <div id="location">Location</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.522271572074!2d103.75209984486594!3d1.3055181625971124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a56784202d9%3A0x488d08d6c1f88d6b!2sNational%20University%20of%20Singapore!5e0!3m2!1sen!2ssg!4v1709959684764!5m2!1sen!2ssg" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- location end -->
+          </div>
+              <!-- center end -->
+               
         </div>
+      </div>
     </div>
+
+    
+    
+    <!-- bottom nav start -->
+<!-- nav bar start-->
+<div class="container">
+  <div class="row bottom-nav">
+      <table id="bottom-nav-table">
+        <tr>
+          <th id="b-nav-style">Scholarly</th>
+          <th id="b-nav-style">Resources </th>
+          <th id="b-nav-style">About</th>
+        </tr>
+        <tr>
+          <td id="b-nav-style">asd</td>
+          <td id="b-nav-style">asd</td>
+          <td id="b-nav-style">asd</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- nav bar end -->
+    <!-- bottom nav end -->
 </main>

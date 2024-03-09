@@ -22,5 +22,123 @@
 
 .school-name {
   font-size: 2.2em;
-  border-bottom: 1px solid;
+  margin-bottom: 5px;
+}
+
+.rankings {
+  background-color:#ebb72a;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  width: 100%; /* Full-width */
+  font-size: 18px; /* Increase font-size */
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+#myTable th, #myTable td {
+  text-align: center; /* center-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+
+.table-responsive {
+  max-height: 300px;
+  border: 1px lightgray solid;
+}
+
+#admission-requirements, #earnings, #tuition-fees, #location {
+  font-size: 1.5em;
+}
+
+.bottom-nav {
+  background-color: #ebb72a;
+  height: auto;
+  width: 100%
+  padding: 100%;
+}
+
+
+#b-nav-style {
+  width: 33%;
+  text-align: center;
+}
+
+.footnotes {
+  font-style: italic;
+}
+
+.side-bar {
+  background-color: grey;
+  height: 100%;
+}
+
+#school-card-title {
+  font-size: 3rem;
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#school-card-logo {
+  width: 100%;
+}
+
+#school-information {
+  text-align: center;
+  font-weight: bold;
+}
+
+#school-card-content-header {
+  font-weight: bold;
+  margin: 15px;
+  font-size: 100%;
+  text-wrap: wrap;
+}
+
+#school-card-content-body {
+  margin: 15px;
+  font-size: 100%;
+  text-wrap: wrap;
+}
+
+.school-card {
+  background-color: rgb(219, 243, 252);
+}
+
+#more-links {
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+  text-shadow: none;
+  transition: 0.2s;
 }
